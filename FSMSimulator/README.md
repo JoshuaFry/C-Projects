@@ -12,17 +12,17 @@ execution.
 ex:
 
 <p>
-FSMSimulator admin$ ./a.out specFile.txt A S
-STATE MACHINE:
-A: (a, B)  (b, A)
-B: (c, D)  (d, A)
-C: (a, A)  (b, A)
-S: (b, C)  (c, A)  (d, A)  (e, A)  (s, B)
-==================================
-
-Enter Test: a d b a
-PATH: B A A B
-REJECTED!
+FSMSimulator admin$ ./a.out specFile.txt A S <br/>
+STATE MACHINE: <br/>
+A: (a, B)  (b, A) <br/>
+B: (c, D)  (d, A) <br/>
+C: (a, A)  (b, A) <br/>
+S: (b, C)  (c, A)  (d, A)  (e, A)  (s, B) <br/>
+================================== <br/>
+<br/>
+Enter Test: a d b a <br/>
+PATH: B A A B <br/>
+REJECTED! <br/>
 </p>
 ex:
 
