@@ -11,6 +11,7 @@ execution.
 
 ex:
 
+<p>
 FSMSimulator admin$ ./a.out specFile.txt A S
 STATE MACHINE:
 A: (a, B)  (b, A)
@@ -22,7 +23,7 @@ S: (b, C)  (c, A)  (d, A)  (e, A)  (s, B)
 Enter Test: a d b a
 PATH: B A A B
 REJECTED!
-
+</p>
 ex:
 
 FSMSimulator admin$ ./a.out specFile.txt B A
