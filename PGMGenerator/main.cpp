@@ -22,19 +22,25 @@ int main(int argc, char *argv[]) {
     resetPixels();
 
     //Check that user gave correct # of arguments
-    if(argc != 3){
+    if(argc == 1){
+        int shapes;
+        outputShapes.open("shapeSpecFile.txt", ofstream::out);
+
+        cout << "how many shapes?";
+        cin >> shapes;
+        generateFile(shapes);
+        outputShapes.close();
+        cout << "=============================" << endl;
+        cout << "shapeSpecFile.txt file created, rerun program with all args" << endl
+                                <<"ex: ./a.out shapeSpecFile.txt output.pgm" << endl;
+        cout << "=============================" << endl;
+        return 0;
+    }
+    else if(argc != 3){
         cout << "incorrect # of files where given, exiting program";
         return 0;
     }
 
-
-//    int shapes;
-//    outputShapes.open("shapeSpecFile.txt", ofstream::out);
-//
-//    cout << "how many shapes?";
-//    cin >> shapes;
-//    generateFile(shapes);
-//    outputShapes.close();
 
     //Open users shape file, quit if not open
     ifstream input;
@@ -143,6 +149,7 @@ int placeTriangle(int x, int y, int size, int grayscale){
 int generateFile(int shapes){
     while(shapes > -1){
         int range = rand()%4; //pick random shape 0-3
+
 
         switch (range){
             case 0:
