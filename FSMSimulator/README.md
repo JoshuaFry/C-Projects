@@ -26,14 +26,16 @@ REJECTED! <br/>
 </p>
 ex:
 
-FSMSimulator admin$ ./a.out specFile.txt B A
-STATE MACHINE:
-A: (a, B)  (b, A)
-B: (c, D)  (d, A)
-C: (a, A)  (b, A)
-S: (b, C)  (c, A)  (d, A)  (e, A)  (s, B)
-==================================
-
-Enter Test: d a d a d
-PATH: A B A B A
-ACCEPTED!
+<p>
+FSMSimulator admin$ ./a.out specFile.txt B A <br/>
+STATE MACHINE: <br/>
+A: (a, B)  (b, A) <br/>
+B: (c, D)  (d, A) <br/>
+C: (a, A)  (b, A) <br/>
+S: (b, C)  (c, A)  (d, A)  (e, A)  (s, B) <br/>
+================================== <br/>
+<br/>
+Enter Test: d a d a d <br/>
+PATH: A B A B A <br/>
+ACCEPTED! <br/>
+</p>
